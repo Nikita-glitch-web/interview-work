@@ -113,4 +113,9 @@ select {
   margin-left: 5%;
 }
 
+.yellow-header-btn:hover {
+  background: #FFE302;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=header.css.map */

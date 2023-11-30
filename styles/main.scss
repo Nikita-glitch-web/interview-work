@@ -139,6 +139,11 @@ $font-weight-for-all-page: 400;
     cursor: pointer;
 }
 
+.yellow-header-btn:hover {
+    background: #FFE302;
+    cursor: pointer;
+}
+
 .yellow-btn-wrapper {
     display: flex;
     justify-content: center;

@@ -121,3 +121,8 @@ $font-weight-for-all-page: 400;
 .yellow-header-btn:last-child {
     margin-left: 5%;
 }
+
+.yellow-header-btn:hover {
+  background: #FFE302;
+    cursor: pointer;
+} 
