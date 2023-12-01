@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
@@ -17,7 +17,7 @@
         <div class="header-wrapper">
             <div class="left-title-box">
                 <div class="header-left-img-box">
-                    <img src="./images/header-logo.png" alt="" class="header-left-img">
+                    <img src="./assets/images/header-logo.png" alt="" class="header-left-img">
                 </div>
             </div>
             <div class="right-button-box">
@@ -55,7 +55,7 @@
             <div class="workers-content-wrapper">
                 <div class="content-row content-row-upper">
                     <div class="box-with-worker">
-                        <img class="workers-img" src="./images/Salvador.png" alt="">
+                        <img class="workers-img" src="./assets/images/Salvador.png" alt="">
                         <p class="workers-box-text">Salvador Stewart Flynn Thomas <span class="workers-box-text-for-large-screen">Salva Salve</span>...</p>
                         <p class="workers-box-text">
                         <span class="workers-box-text-for-small-screen">Frontend Developer Frontend...</span>
@@ -65,7 +65,7 @@
                         +38 (098) 278 44 24<br>
                     </div>
                     <div class="box-with-worker box-with-worker-middle-box">
-                        <img class="workers-img" src="./images/Takamaru.png" alt="">
+                        <img class="workers-img" src="./assets/images/Takamaru.png" alt="">
                         <p class="workers-box-text">Takamaru Ayako Jurrien</p>
                         <p class="workers-box-text">
                             Lead Independent Director<br>
@@ -73,7 +73,7 @@
                             +38 (098) 278 90 24</p>
                     </div>
                     <div class="box-with-worker">
-                        <img class="workers-img" src="./images/Black-Ilya.png" alt="">
+                        <img class="workers-img" src="./assets/images/Black-Ilya.png" alt="">
                         <p class="workers-box-text">Ilya</p>
                         <p class="workers-box-text">
                             Co-Founder and CEO<br>
@@ -83,8 +83,8 @@
                     </div>
                 </div>
                 <div class="content-row">
-                    <div class="box-with-worker">
-                        <img class="workers-img" src="./images/Alexandre.png" alt="">
+                    <div class="box-with-worker box-with-worker-alexandro">
+                        <img class="workers-img" src="./assets/images/Alexandre.png" alt="">
                         <p class="workers-box-text">Alexandre</p>
                         <p class="workers-box-text">
                             Lead Independent Director<br>
@@ -92,7 +92,7 @@
                             +38 (098) 198 44 24</p>
                     </div>
                     <div class="box-with-worker box-with-worker-middle-box">
-                        <img class="workers-img" src="./images/Locki.png" alt="">
+                        <img class="workers-img" src="./assets/images/Locki.png" alt="">
                         <p class="workers-box-text">Winny</p>
                         <p class="workers-box-text">
                             Former Senior Director<br>
@@ -100,7 +100,7 @@
                             +38 (098) 278 22 88<br></p>
                     </div>
                     <div class="box-with-worker">
-                        <img class="workers-img" src="./images/Simon.png" alt="">
+                        <img class="workers-img" src="./assets/images/Simon.png" alt="">
                         <p class="workers-box-text">Ilya</p>
                         <p class="workers-box-text">
                         President of Commerce <br>
@@ -118,8 +118,40 @@
             </div>
         </section>
         <section class="form-section">
-            <div>
-                
+            <h1 class="workers-title workers-title-for-form">Working with POST request</h1>
+            <div class="form-content-wrapper">
+                <form class="form" action="" method="POST">
+                    <input type="text" placeholder="Your name" class="form-input-for-text-or-numbers">
+                    <input type="email" placeholder="Email" class="form-input-for-text-or-numbers form-input-for-text-or-numbers-middle-input">
+                    <input id="phone-input" type="number" placeholder="Phone" class="form-input-for-text-or-numbers">
+                    <label class="phone-input-label" for="phone-input">+38 (XXX) XXX - XX - XX</label>
+                    <div class="container-with-checkbox">
+                        <h1 class="title-for-checkbox">
+                            Select your position
+                        </h1>
+                        <div class="checkbox-container">
+                            <div class="check-box-wrapper"> 
+                                <input type="radio" class="custom-radio" name="radio" id="checkbox-front" value="">
+                                <label for="checkbox-front" class="text-for-checkbox">Frontend developer</label>
+                            </div>
+                            <div class="check-box-wrapper">
+                                <input type="radio" class="custom-radio" name="radio" id="checkbox-back">
+                                <label for="checkbox-back" class="text-for-checkbox">Backend developer</label>
+                            </div>
+                            <div class="check-box-wrapper">
+                                <input type="radio" class="custom-radio" name="radio" id="checkbox-designer">
+                                <label for="checkbox-designer" class="text-for-checkbox">Designer</label>
+                            </div>
+                            <div class="check-box-wrapper">
+                                <input type="radio" class="custom-radio" name="radio" id="checkbox-qa">
+                                <label for="checkbox-qa" class="text-for-checkbox">QA</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-for-image-wrapper">
+                        <input class="input-for-image" type="file" placeholder="Upload your photo">
+                    </div>
+                </form>
             </div>
         </section>
     </main>

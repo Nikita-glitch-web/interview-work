@@ -73,7 +73,7 @@ select {
 }
 
 .background-image-section {
-  background-image: url(/images/background-UA.png);
+  background-image: url(./assets/images/background-UA.png);
   margin: 0;
   box-sizing: border-box;
   background-repeat: no-repeat;
@@ -124,6 +124,7 @@ select {
   width: 100px;
   height: 34px;
   margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .yellow-content-btn:hover {
@@ -201,6 +202,122 @@ select {
 .box-with-worker-middle-box {
   margin-left: 2%;
   margin-right: 2%;
+}
+
+.form-section {
+  background: #F8F8F8;
+  padding-top: 5%;
+}
+
+.form-input-for-text-or-numbers {
+  width: 380px;
+  height: 54px;
+  border: 1px solid #D0CFCF;
+  border-radius: 4px;
+  font-family: "Nunito";
+  background: #F8F8F8;
+  color: #7E7E7E;
+  padding-left: 4%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.form-input-for-text-or-numbers-middle-input {
+  margin-top: 14%;
+  margin-bottom: 14%;
+}
+
+.title-for-checkbox {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.container-with-checkbox {
+  display: flex;
+  justify-content: left;
+}
+
+.phone-input-label {
+  font-family: "Nunito";
+  color: #7E7E7E;
+  padding-left: 4%;
+  line-height: 14px;
+  font-size: 12px;
+}
+
+.form-content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.workers-title-for-form {
+  padding-bottom: 2%;
+}
+
+.container-with-checkbox {
+  padding-top: 6%;
+}
+
+.container-with-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-for-checkbox {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+
+.checkbox-container {
+  padding-top: 3%;
+}
+
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-radio:checked + label::before {
+  background-image: url(/images/checkbox.png);
+  border: 1px solid #00BDD3;
 }
 
 @media (max-width: 1500px) {
@@ -294,6 +411,9 @@ select {
   }
   .yellow-btn-wrapper {
     padding-top: 5%;
+  }
+  .box-with-worker-alexandro {
+    margin-top: 5%;
   }
 }
 
