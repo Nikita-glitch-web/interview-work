@@ -1,0 +1,125 @@
+@media (max-width: 1487px) {
+  .workers-box-text-for-small-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 2000px) {
+  .workers-box-title-for-large-screen {
+    display: inline;
+  }
+}
+@media (max-width: 1487px) {
+  .workers-box-title-for-large-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 2000px) {
+  .workers-box-text-for-big-screen {
+    display: none;
+  }
+}
+@media (max-width: 1487px) {
+  .workers-box-text-for-big-screen {
+    display: inline;
+  }
+}
+
+.box-with-workers {
+  padding-top: 7%;
+}
+
+.workers-title {
+  font-family: "Nunito";
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.box-with-worker {
+  background: white;
+  width: 31.3333333333%;
+  height: 254px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workers-title-for-form {
+  padding-bottom: 2%;
+}
+
+.workers-box-text {
+  font-size: 16px;
+  font-family: "Nunito";
+  padding-top: 20px;
+  text-align: center;
+  line-height: 26px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+}
+
+.workers-content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 3%;
+}
+
+.workers-img {
+  padding-top: 20px;
+}
+
+.content-row {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.content-row-upper {
+  padding-bottom: 3%;
+}
+
+.box-with-worker-upper-box {
+  margin-bottom: 2.2%;
+}
+
+.box-with-worker-middle-box {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.btn {
+  font-family: "Nunito";
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 400;
+  color: black;
+  background-color: #F4E041;
+  border: none;
+  border-radius: 80px;
+  width: 100px;
+  height: 34px;
+}
+
+.btn:hover {
+  background: #FFE302;
+  cursor: pointer;
+}
+
+.btn-for-workers-box {
+  width: 120px;
+}
+
+.btn-content-wrapper {
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=workers.css.map */

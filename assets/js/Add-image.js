@@ -7,3 +7,5 @@ function save() {
 }
 
 image1.src = localStorage.getItem("myImage");
+
+

@@ -1,0 +1,68 @@
+@import './variables';
+
+.banner-section {
+    background-image: url(/assets/images/background-UA.png);
+    margin: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-info-part {
+    width: 100%;
+    margin: auto;
+}
+
+.title-in-banner {
+    font-family: $font-for-all-page;
+    font-size: $font-size-for-titles;
+    line-height: 40px;
+    font-weight: $font-weight-for-all-page;
+    color: #ffff;
+    text-align: center;
+}
+
+.text-in-banner {
+    font-family: $font-for-all-page;
+    text-align: center;
+    color: white;
+    font-weight: 250;
+    line-height: 26px;
+    padding-top: 1.5%;
+    text-align: center;
+}
+
+.btn-for-all-content {
+    font-family: $font-for-all-page;
+    font-size: $size-for-basic-text;
+    line-height: 26px;
+    text-align: center;
+    font-weight: $font-weight-for-all-page;
+    color: black;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 80px;
+    width: 100px;
+    height: 34px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.btn-for-all-content:hover {
+    background: #FFE302;
+    cursor: pointer;
+}
+
+
+
+.btn-for-all-content-wrapper {
+    display: flex;
+    justify-content: center;
+}

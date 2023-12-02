@@ -1,83 +1,7 @@
-/* Указываем box sizing */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-    padding: 0;
-}
-
-/* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-    margin: 0;
-}
-
-/* Выставляем основные настройки по-умолчанию для body */
-body {
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-}
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-    list-style: none;
-}
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
-
-/* Упрощаем работу с изображениями */
-img {
-    max-width: 100%;
-    display: block;
-}
-
-/* Указываем понятную периодичность в потоке данных у article*/
-article>*+* {
-    margin-top: 1em;
-}
-
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
+@import './variables';
+@import './mixin';
 
 
-$font-for-all-page: 'Nunito';
-$font-size-for-titles: 40px;
-$background-color: #F8F8F8;
-$primary-color: #F4E041;
-$size-for-basic-text: 16px;
-$font-weight-for-all-page: 400;
-
-.header-main-box {
-    background: $background-color;
-}
 
 .header-wrapper {
     display: flex;
@@ -104,7 +28,7 @@ $font-weight-for-all-page: 400;
 }
 
 
-.yellow-header-btn {
+.btn-for-header {
     font-family: $font-for-all-page;
     font-size: $size-for-basic-text;
     line-height: 26px;
@@ -118,11 +42,11 @@ $font-weight-for-all-page: 400;
     height: 34px;
 }
 
-.yellow-header-btn:last-child {
+.btn-for-header:last-child {
     margin-left: 5%;
 }
 
-.yellow-header-btn:hover {
+.btn-for-header:hover {
   background: #FFE302;
     cursor: pointer;
 } 

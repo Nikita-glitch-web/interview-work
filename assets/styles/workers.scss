@@ -1,0 +1,164 @@
+@import './variables';
+@import './mixin';
+
+// .workers-content-wrapper {
+//     background: $background-color;
+
+
+    
+// }
+
+.workers-box-text-for-small-screen {
+    @include _1487 {
+        display: none;
+    }
+    
+}
+
+.workers-box-title-for-large-screen {
+@include _2000 {
+        display: inline;
+    }
+
+    @include _1487 {
+        display: none;
+    }
+}
+
+.workers-box-text-for-big-screen {
+    @include _2000 {
+        display: none;
+    } 
+
+    @include _1487 {
+        display: inline;
+    }
+
+
+}
+
+
+// .content-row {
+//     @include _979 {
+//         display: flex;
+//         flex-direction: column;
+//     }
+// }
+
+.workers-content-wrapper {
+    @include _979 {
+        
+        }
+}
+
+.content-row {
+    @include _979 {
+        
+    }
+}
+
+.box-with-worker {
+@include _979 {
+    
+    }
+}
+
+
+.box-with-workers {
+    padding-top: 7%;
+}
+
+.workers-title {
+    font-family: $font-for-all-page;
+    font-size: $font-size-for-titles;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box-with-worker {
+    background: white;
+    width: 31.3333333333%;
+    height: 254px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workers-title-for-form {
+    padding-bottom: 2%;
+}
+
+.workers-box-text {
+    font-size: $size-for-basic-text;
+    font-family: $font-for-all-page;
+    padding-top: 20px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: $font-weight-for-all-page;
+    text-overflow: ellipsis;
+    
+}
+
+.workers-content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3%;
+}
+
+.workers-img {
+    padding-top: 20px;
+}
+
+
+
+.content-row {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.content-row-upper {
+    padding-bottom: 3%
+}
+
+.box-with-worker-upper-box {
+    margin-bottom: 2.2%;
+}
+
+.box-with-worker-middle-box {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.btn {
+    font-family: $font-for-all-page;
+    font-size: $size-for-basic-text;
+    line-height: 26px;
+    text-align: center;
+    font-weight: $font-weight-for-all-page;
+    color: black;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 80px;
+    width: 100px;
+    height: 34px;
+}
+
+.btn:hover {
+    background: #FFE302;
+    cursor: pointer;
+}
+
+.btn-for-workers-box {
+    width: 120px;
+}
+
+.btn-content-wrapper {
+    padding-top: 4%;
+    display: flex;
+    justify-content: center;
+}

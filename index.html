@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/banner.css">
+    <link rel="stylesheet" href="/assets/css/workers.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Cinzel&family=Encode+Sans+Condensed:wght@300&family=Merriweather:wght@300&family=Nunito:wght@200;300;400&family=Open+Sans&family=Playfair+Display:wght@400;500&family=Poppins:wght@200&family=Rubik+Glitch&family=Sen:wght@400;700&family=Sofia+Sans:wght@300&family=Trispace&family=Work+Sans:wght@300&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Encode+Sans+Condensed:wght@300&family=Merriweather:wght@300&family=Nunito:wght@200;300;400&family=Open+Sans&family=Playfair+Display:wght@400;500&family=Poppins:wght@200&family=Rubik+Glitch&family=Sen:wght@400;700&family=Sofia+Sans:wght@300&family=Trispace&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header-main-box">
@@ -22,10 +23,10 @@
             </div>
             <div class="right-button-box">
                 <div class="buttons-wrapper">
-                    <button class="yellow-header-btn">
+                    <button class="btn-for-header">
                         Users
                     </button>
-                    <button class="yellow-header-btn">
+                    <button class="btn-for-header">
                         Sign up
                     </button>
                 </div>
@@ -33,14 +34,14 @@
         </div>
     </header>
     <main class="main-content-part">
-        <section class="background-image-section">
-            <div class="text-part-with-yellow-btn">
-                <h1 class="title-in-background-image">Test assignment for <br> front-end developer</h1>
-                <p class="text-in-background-image">What defines a good front-end developer is one that<br> has skilled knowledge of HTML, CSS, JS with a vast<br> understanding of
+        <section class="banner-section">
+            <div class="banner-info-part">
+                <h1 class="title-in-banner">Test assignment for <br> front-end developer</h1>
+                <p class="text-in-banner">What defines a good front-end developer is one that<br> has skilled knowledge of HTML, CSS, JS with a vast<br> understanding of
                 User design thinking as they'll be<br> building web interfaces with accessibility in mind.<br> They should also be excited to
                 learn, as the world of<br> Front-End Development keeps evolving.</p>
-                <div class="yellow-btn-wrapper">
-                    <button class="yellow-content-btn">
+                <div class="btn-for-all-content-wrapper">
+                    <button class="btn-for-all-content">
                         Sign up
                     </button>
                 </div>
@@ -56,13 +57,15 @@
                 <div class="content-row content-row-upper">
                     <div class="box-with-worker">
                         <img class="workers-img" src="./assets/images/Salvador.png" alt="">
-                        <p class="workers-box-text">Salvador Stewart Flynn Thomas <span class="workers-box-text-for-large-screen">Salva Salve</span>...</p>
+                        <p class="workers-box-text">Salvador Stewart Flynn Thomas <span class="workers-box-title-for-large-screen">Salva Salve</span>...</p>
                         <p class="workers-box-text">
-                        <span class="workers-box-text-for-small-screen">Frontend Developer Frontend...</span>
-                        <span class="workers-box-text-for-large-screen">Leading specialist of the department of c...</span><br>
-                        <span class="workers-box-text-for-new-small-screen">JeromeKlarkaJeromeKlarka1923362362...</span>
-                        frontend_develop@gmail.com<br>
-                        +38 (098) 278 44 24<br>
+                        <span class="workers-box-text-for-small-screen">Leading specialist of the department of cent...</span>
+                        <span class="workers-box-text-for-big-screen">Frontend Developer Frontend...</span>
+                        frontend_develop@gmail.com <br>
+                        +38 (098) 278 44 24
+                        <!-- <span class="workers-box-text-for-large-screen">Leading specialist of the department of c...</span><br>
+                        <span class="workers-box-text-for-new-small-screen">JeromeKlarkaJeromeKlarka1923362362...</span> -->
+                        </p>
                     </div>
                     <div class="box-with-worker box-with-worker-middle-box">
                         <img class="workers-img" src="./assets/images/Takamaru.png" alt="">
@@ -111,8 +114,8 @@
                 </div>
             </div>
         </div>
-            <div class="yellow-btn-wrapper">
-                <button class="yellow-content-btn">
+            <div class="btn-content-wrapper">
+                <button class="btn btn-for-workers-box">
                     Show more
                 </button>
             </div>
@@ -121,10 +124,10 @@
             <h1 class="workers-title workers-title-for-form">Working with POST request</h1>
             <div class="form-content-wrapper">
                 <form class="form" action="" method="POST">
-                    <input type="text" placeholder="Your name" class="form-input-for-text-or-numbers">
-                    <input type="email" placeholder="Email" class="form-input-for-text-or-numbers form-input-for-text-or-numbers-middle-input">
-                    <input id="phone-input" type="number" placeholder="Phone" class="form-input-for-text-or-numbers">
-                    <label class="phone-input-label" for="phone-input">+38 (XXX) XXX - XX - XX</label>
+                    <input type="text" placeholder="Your name" class="form-input">
+                    <input type="email" placeholder="Email" class="form-input form-input-middle-input">
+                    <input id="phone-input" type="number" placeholder="Phone" class="form-input">
+                    <label class="form-input-label" for="phone-input">+38 (XXX) XXX - XX - XX</label>
                     <div class="container-with-checkbox">
                         <h1 class="title-for-checkbox">
                             Select your position
@@ -149,7 +152,12 @@
                         </div>
                     </div>
                     <div class="input-for-image-wrapper">
-                        <input class="input-for-image" type="file" placeholder="Upload your photo">
+                        <button class="btn-for-upload">Upload</button>
+                        <input type="file" id="image-file" accept="image/x-png, image/jpeg, image/webp" style="display : none"/>
+                        <label id="image-label" for="image-file">Upload your photo</label>
+                    </div>
+                    <div class="btn-content-wrapper btn-content-wrapper-disable-btn">
+                        <button class="btn">Sign up</button>
                     </div>
                 </form>
             </div>
