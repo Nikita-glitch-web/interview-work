@@ -1,6 +1,75 @@
 @import './variables';
 
+@import './mixin';
 
+.form-input {
+    @include _2500 {
+    width: 380px;
+        height: 54px;
+        border: 1px solid #D0CFCF;
+        border-radius: 4px;
+        font-family: $font-for-all-page;
+        background: $background-color;
+        color: $font-for-input;
+        padding-left: 4%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    @include _419 {
+        width: 325px;
+    }
+
+}
+
+.form-inputs-wrapper {
+    @include _2500 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.input-for-image-wrapper {
+    @include _2500 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 9%;
+    }
+
+    @include _419 {
+        width: 85%;
+    }
+
+}
+
+.form {
+    @include _2500 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include _419 {
+        align-self: center;
+    }
+}
+
+.container-with-checkbox {
+    @include _2500 {
+                display: flex;
+                flex-direction: column;
+                padding-top: 6%;
+                padding-right: 55%;
+        }
+    
+        @include _419 {
+            padding-right: 40%;
+        }
+}
 
 .form-section {
     background: $background-color;
@@ -8,18 +77,18 @@
 
 }
 
-.form-input {
-    width: 380px;
-    height: 54px;
-    border: 1px solid #D0CFCF;
-    border-radius: 4px;
-    font-family: $font-for-all-page;
-    background: $background-color;
-    color: $font-for-input;
-    padding-left: 4%;
-    font-size: 16px;
-    line-height: 26px;
-}
+// .form-input {
+//     width: 380px;
+//     height: 54px;
+//     border: 1px solid #D0CFCF;
+//     border-radius: 4px;
+//     font-family: $font-for-all-page;
+//     background: $background-color;
+//     color: $font-for-input;
+//     padding-left: 4%;
+//     font-size: 16px;
+//     line-height: 26px;
+// }
 
 .form-input-middle-input {
     margin-top: 14%;
@@ -36,10 +105,7 @@
     text-align: left;
 }
 
-.container-with-checkbox {
-    display: flex;
-    justify-content: left;
-}
+
 
 
 .form-content-wrapper {
@@ -49,12 +115,12 @@
     align-items: center;
 }
 
-.form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+// .form {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
 
-}
+// }
 
 
 
@@ -65,14 +131,15 @@
     line-height: 14px;
     letter-spacing: 0em;
     color: $font-for-input;
-    padding-left: 4%;
+    padding-right: 50%;
 }
 
-.container-with-checkbox {
-    display: flex;
-    flex-direction: column;
-    padding-top: 6%;
-}
+// .container-with-checkbox {
+//     display: flex;
+//         flex-direction: column;
+//         padding-top: 6%;
+//         padding-right: 55%;
+// }
 
 .text-for-checkbox {
     //styleName: Body 16;
@@ -179,8 +246,8 @@
         font-family: $font-for-all-page;
         background: $background-color;
         color: $font-for-input;
-        padding-left: 4%;
-        padding-top: 3%;
+        padding-left: 5%;
+        padding-top: 4%;
         font-size: 16px;
         line-height: 26px;
         position: relative;
@@ -188,12 +255,12 @@
             border-bottom-right-radius: 4px;
 };
 
-.input-for-image-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-top: 9%;
-}
+// .input-for-image-wrapper {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     padding-top: 9%;
+// }
 
 .btn-content-wrapper-disable-btn {
     padding-top: 10%;
